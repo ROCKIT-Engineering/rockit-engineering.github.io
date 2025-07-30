@@ -8,9 +8,6 @@ var searchData=
   ['state_5ft_2eh_5',['State_t.h',['../_state__t_8h.html',1,'']]],
   ['stateestimationdata_6',['StateEstimationData',['../struct_state_estimation_data.html',1,'']]],
   ['stateestimationdata_2eh_7',['StateEstimationData.h',['../_state_estimation_data_8h.html',1,'']]],
-  ['stateestimationtask_8',['StateEstimationTask',['../class_state_estimation_task.html',1,'StateEstimationTask'],['../class_state_estimation_task.html#a675894a0e4aee45f688f6031515fa555',1,'StateEstimationTask::StateEstimationTask()']]],
-  ['stateestimationtask_2ecpp_9',['StateEstimationTask.cpp',['../_state_estimation_task_8cpp.html',1,'']]],
-  ['stateestimationtask_2eh_10',['StateEstimationTask.h',['../_state_estimation_task_8h.html',1,'']]],
-  ['states_2eh_11',['States.h',['../_states_8h.html',1,'']]],
-  ['suspend_12',['suspend',['../class_i_task_wrapper.html#ac59fc6a94bd21c4efea675a38715f913',1,'ITaskWrapper::suspend()'],['../class_task_wrapper__t.html#a756507aeb0164323c36493484e040ea3',1,'TaskWrapper_t::suspend()']]]
+  ['states_2eh_8',['States.h',['../_states_8h.html',1,'']]],
+  ['suspend_9',['suspend',['../class_i_task_wrapper.html#ac59fc6a94bd21c4efea675a38715f913',1,'ITaskWrapper::suspend()'],['../class_task_wrapper__t.html#a756507aeb0164323c36493484e040ea3',1,'TaskWrapper_t::suspend()']]]
 ];

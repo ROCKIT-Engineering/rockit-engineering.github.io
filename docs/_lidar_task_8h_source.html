@@ -100,38 +100,30 @@ $(function(){initNavTree('_lidar_task_8h_source.html','',''); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;TFLI2C.h&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;arduino_freertos.h&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;queue.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_lidar_data_8h.html">Structs/include/LidarData.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_lidar_task.html">   12</a></span><span class="keyword">class </span><a class="code hl_function" href="class_lidar_task.html#a67081cd985cfb0cc9389992455403b27">LidarTask</a> : <span class="keyword">public</span> <a class="code hl_friend" href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>&lt;LidarTask&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">   14</a></span><span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lidar_task.html#a3e255ab04ba11e8fba44415dfdf203ee">run</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lidar_task.html#ad7458c082900cce7b6c2ecdaef1e8699">init</a>() <span class="keyword">override</span>;    </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    QueueHandle_t <a class="code hl_function" href="class_lidar_task.html#a14ffdb81cf7aa663d48e837d15cbc188">getLidarQueue</a>();</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_lidar_task.html">   11</a></span><span class="keyword">class </span><a class="code hl_function" href="class_lidar_task.html#a67081cd985cfb0cc9389992455403b27">LidarTask</a> : <span class="keyword">public</span> <a class="code hl_friend" href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>&lt;LidarTask&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">   13</a></span><span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lidar_task.html#a3e255ab04ba11e8fba44415dfdf203ee">run</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lidar_task.html#ad7458c082900cce7b6c2ecdaef1e8699">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">protected</span>: </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_lidar_task.html#a67081cd985cfb0cc9389992455403b27">LidarTask</a>();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">protected</span>: </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_lidar_task.html#a67081cd985cfb0cc9389992455403b27">LidarTask</a>();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">private</span>: </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    TFLI2C lidarWriter;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    QueueHandle_t xLidarQueue = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="struct_lidar_data.html">LidarData</a> lastLidar{};</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>: </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    TFLI2C lidarWriter;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
 <div class="ttc" id="a_drop_o_s_8h_html"><div class="ttname"><a href="_drop_o_s_8h.html">DropOS.h</a></div></div>
-<div class="ttc" id="a_lidar_data_8h_html"><div class="ttname"><a href="_lidar_data_8h.html">LidarData.h</a></div></div>
 <div class="ttc" id="a_task_wrapper__t_8h_html"><div class="ttname"><a href="_task_wrapper__t_8h.html">TaskWrapper_t.h</a></div></div>
-<div class="ttc" id="aclass_lidar_task_html_a14ffdb81cf7aa663d48e837d15cbc188"><div class="ttname"><a href="class_lidar_task.html#a14ffdb81cf7aa663d48e837d15cbc188">LidarTask::getLidarQueue</a></div><div class="ttdeci">QueueHandle_t getLidarQueue()</div><div class="ttdef"><b>Definition</b> LidarTask.cpp:46</div></div>
-<div class="ttc" id="aclass_lidar_task_html_a3e255ab04ba11e8fba44415dfdf203ee"><div class="ttname"><a href="class_lidar_task.html#a3e255ab04ba11e8fba44415dfdf203ee">LidarTask::run</a></div><div class="ttdeci">void run() override</div><div class="ttdoc">TODO: check this doc comment.</div><div class="ttdef"><b>Definition</b> LidarTask.cpp:31</div></div>
-<div class="ttc" id="aclass_lidar_task_html_a67081cd985cfb0cc9389992455403b27"><div class="ttname"><a href="class_lidar_task.html#a67081cd985cfb0cc9389992455403b27">LidarTask::LidarTask</a></div><div class="ttdeci">LidarTask()</div><div class="ttdef"><b>Definition</b> LidarTask.cpp:10</div></div>
-<div class="ttc" id="aclass_lidar_task_html_ac4a28d78b2f7d3d899893ce5fdce4bb8"><div class="ttname"><a href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">LidarTask::TaskWrapper_t</a></div><div class="ttdeci">friend class TaskWrapper_t</div><div class="ttdef"><b>Definition</b> LidarTask.h:14</div></div>
-<div class="ttc" id="aclass_lidar_task_html_ad7458c082900cce7b6c2ecdaef1e8699"><div class="ttname"><a href="class_lidar_task.html#ad7458c082900cce7b6c2ecdaef1e8699">LidarTask::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition</b> LidarTask.cpp:23</div></div>
-<div class="ttc" id="astruct_lidar_data_html"><div class="ttname"><a href="struct_lidar_data.html">LidarData</a></div><div class="ttdef"><b>Definition</b> LidarData.h:5</div></div>
+<div class="ttc" id="aclass_lidar_task_html_a3e255ab04ba11e8fba44415dfdf203ee"><div class="ttname"><a href="class_lidar_task.html#a3e255ab04ba11e8fba44415dfdf203ee">LidarTask::run</a></div><div class="ttdeci">void run() override</div><div class="ttdoc">TODO: check this doc comment.</div><div class="ttdef"><b>Definition</b> LidarTask.cpp:26</div></div>
+<div class="ttc" id="aclass_lidar_task_html_a67081cd985cfb0cc9389992455403b27"><div class="ttname"><a href="class_lidar_task.html#a67081cd985cfb0cc9389992455403b27">LidarTask::LidarTask</a></div><div class="ttdeci">LidarTask()</div><div class="ttdef"><b>Definition</b> LidarTask.cpp:12</div></div>
+<div class="ttc" id="aclass_lidar_task_html_ac4a28d78b2f7d3d899893ce5fdce4bb8"><div class="ttname"><a href="class_lidar_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">LidarTask::TaskWrapper_t</a></div><div class="ttdeci">friend class TaskWrapper_t</div><div class="ttdef"><b>Definition</b> LidarTask.h:13</div></div>
+<div class="ttc" id="aclass_lidar_task_html_ad7458c082900cce7b6c2ecdaef1e8699"><div class="ttname"><a href="class_lidar_task.html#ad7458c082900cce7b6c2ecdaef1e8699">LidarTask::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition</b> LidarTask.cpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

@@ -1,7 +1,7 @@
 var _o_s___c_o_n_f_i_g_8h =
 [
     [ "DEBUG_LOGGING", "_o_s___c_o_n_f_i_g_8h.html#a51d45ddac51705105e951d6aa0da219a", null ],
-    [ "DUMMY_HZ", "_o_s___c_o_n_f_i_g_8h.html#a6e7caab0dd523c7dd48b95dc7ac4c01c", null ],
+    [ "DEBUGGING_HZ", "_o_s___c_o_n_f_i_g_8h.html#a4ea9d3aa42efcefe208d956e8ece2042", null ],
     [ "FSM_HZ", "_o_s___c_o_n_f_i_g_8h.html#aa840e7646d8d30cb98887480d49a93a5", null ],
     [ "GPS_HZ", "_o_s___c_o_n_f_i_g_8h.html#ac448d5f785d219fab70dff318a64226c", null ],
     [ "IMU_HZ", "_o_s___c_o_n_f_i_g_8h.html#a20c1908874bb367e99f3750f5326c3c5", null ],

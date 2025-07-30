@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DropOS: src/Tasks/include/DummySenderTask.h Source File</title>
+<title>DropOS: src/Tasks/include/DebuggingTask.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('_dummy_sender_task_8h_source.html','',''); });
+$(function(){initNavTree('_debugging_task_8h_source.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -89,10 +89,10 @@ $(function(){initNavTree('_dummy_sender_task_8h_source.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">DummySenderTask.h</div></div>
+  <div class="headertitle"><div class="title">DebuggingTask.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_dummy_sender_task_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="_debugging_task_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;arduino_freertos.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,31 +102,31 @@ $(function(){initNavTree('_dummy_sender_task_8h_source.html','',''); });
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_dummy_sender_task.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="class_dummy_sender_task.html#aab8a4827cb256942ec1f0323eef27a0c">DummySenderTask</a> : <span class="keyword">public</span> <a class="code hl_friend" href="class_dummy_sender_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>&lt;DummySenderTask&gt;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_debugging_task.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="class_debugging_task.html#a4dcb46131f79071faf7bde159dd038ae">DebuggingTask</a> : <span class="keyword">public</span> <a class="code hl_friend" href="class_debugging_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>&lt;DebuggingTask&gt;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_dummy_sender_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">   12</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="class_dummy_sender_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_debugging_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">   12</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="class_debugging_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">TaskWrapper_t</a>;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dummy_sender_task.html#aad331ba68c64ae164b310faff6a3326e">run</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dummy_sender_task.html#ab0ed0ed9403685aaae330bd1c85b0933">init</a>() <span class="keyword">override</span>;    </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_debugging_task.html#a5c7aeac934914567e88a13351ec3acbb">run</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_debugging_task.html#a994da6e301ae0f4fae9bc982af2bc814">init</a>() <span class="keyword">override</span>;    </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">explicit</span> <a class="code hl_function" href="class_dummy_sender_task.html#aab8a4827cb256942ec1f0323eef27a0c">DummySenderTask</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">explicit</span> <a class="code hl_function" href="class_debugging_task.html#a4dcb46131f79071faf7bde159dd038ae">DebuggingTask</a>();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
 </div>
 <div class="ttc" id="a_task_wrapper__t_8h_html"><div class="ttname"><a href="_task_wrapper__t_8h.html">TaskWrapper_t.h</a></div></div>
+<div class="ttc" id="aclass_debugging_task_html_a4dcb46131f79071faf7bde159dd038ae"><div class="ttname"><a href="class_debugging_task.html#a4dcb46131f79071faf7bde159dd038ae">DebuggingTask::DebuggingTask</a></div><div class="ttdeci">DebuggingTask()</div><div class="ttdef"><b>Definition</b> DebuggingTask.cpp:7</div></div>
+<div class="ttc" id="aclass_debugging_task_html_a5c7aeac934914567e88a13351ec3acbb"><div class="ttname"><a href="class_debugging_task.html#a5c7aeac934914567e88a13351ec3acbb">DebuggingTask::run</a></div><div class="ttdeci">void run() override</div><div class="ttdoc">TODO: check this doc comment.</div><div class="ttdef"><b>Definition</b> DebuggingTask.cpp:33</div></div>
+<div class="ttc" id="aclass_debugging_task_html_a994da6e301ae0f4fae9bc982af2bc814"><div class="ttname"><a href="class_debugging_task.html#a994da6e301ae0f4fae9bc982af2bc814">DebuggingTask::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition</b> DebuggingTask.cpp:28</div></div>
+<div class="ttc" id="aclass_debugging_task_html_ac4a28d78b2f7d3d899893ce5fdce4bb8"><div class="ttname"><a href="class_debugging_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">DebuggingTask::TaskWrapper_t</a></div><div class="ttdeci">friend class TaskWrapper_t</div><div class="ttdef"><b>Definition</b> DebuggingTask.h:12</div></div>
 <div class="ttc" id="aclass_drop_o_s_html"><div class="ttname"><a href="class_drop_o_s.html">DropOS</a></div><div class="ttdef"><b>Definition</b> DropOS.h:5</div></div>
-<div class="ttc" id="aclass_dummy_sender_task_html_aab8a4827cb256942ec1f0323eef27a0c"><div class="ttname"><a href="class_dummy_sender_task.html#aab8a4827cb256942ec1f0323eef27a0c">DummySenderTask::DummySenderTask</a></div><div class="ttdeci">DummySenderTask()</div><div class="ttdef"><b>Definition</b> DummySenderTask.cpp:7</div></div>
-<div class="ttc" id="aclass_dummy_sender_task_html_aad331ba68c64ae164b310faff6a3326e"><div class="ttname"><a href="class_dummy_sender_task.html#aad331ba68c64ae164b310faff6a3326e">DummySenderTask::run</a></div><div class="ttdeci">void run() override</div><div class="ttdoc">TODO: check this doc comment.</div><div class="ttdef"><b>Definition</b> DummySenderTask.cpp:17</div></div>
-<div class="ttc" id="aclass_dummy_sender_task_html_ab0ed0ed9403685aaae330bd1c85b0933"><div class="ttname"><a href="class_dummy_sender_task.html#ab0ed0ed9403685aaae330bd1c85b0933">DummySenderTask::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition</b> DummySenderTask.cpp:12</div></div>
-<div class="ttc" id="aclass_dummy_sender_task_html_ac4a28d78b2f7d3d899893ce5fdce4bb8"><div class="ttname"><a href="class_dummy_sender_task.html#ac4a28d78b2f7d3d899893ce5fdce4bb8">DummySenderTask::TaskWrapper_t</a></div><div class="ttdeci">friend class TaskWrapper_t</div><div class="ttdef"><b>Definition</b> DummySenderTask.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_15942c16c93f90974604cc5d8cedb2cd.html">Tasks</a></li><li class="navelem"><a href="dir_aa900fc7be02923e44cc72c4e96fd250.html">include</a></li><li class="navelem"><a href="_dummy_sender_task_8h.html">DummySenderTask.h</a></li>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_15942c16c93f90974604cc5d8cedb2cd.html">Tasks</a></li><li class="navelem"><a href="dir_aa900fc7be02923e44cc72c4e96fd250.html">include</a></li><li class="navelem"><a href="_debugging_task_8h.html">DebuggingTask.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

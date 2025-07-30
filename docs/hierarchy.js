@@ -4,8 +4,8 @@ var hierarchy =
     [ "GPSData", "struct_g_p_s_data.html", null ],
     [ "IMUData", "struct_i_m_u_data.html", null ],
     [ "ITaskWrapper", "class_i_task_wrapper.html", [
-      [ "TaskWrapper_t< DummySenderTask >", "class_task_wrapper__t.html", [
-        [ "DummySenderTask", "class_dummy_sender_task.html", null ]
+      [ "TaskWrapper_t< DebuggingTask >", "class_task_wrapper__t.html", [
+        [ "DebuggingTask", "class_debugging_task.html", null ]
       ] ],
       [ "TaskWrapper_t< FSMTask >", "class_task_wrapper__t.html", [
         [ "FSMTask", "class_f_s_m_task.html", null ]
@@ -18,9 +18,6 @@ var hierarchy =
       ] ],
       [ "TaskWrapper_t< LidarTask >", "class_task_wrapper__t.html", [
         [ "LidarTask", "class_lidar_task.html", null ]
-      ] ],
-      [ "TaskWrapper_t< StateEstimationTask >", "class_task_wrapper__t.html", [
-        [ "StateEstimationTask", "class_state_estimation_task.html", null ]
       ] ],
       [ "TaskWrapper_t< TelemetryTask >", "class_task_wrapper__t.html", [
         [ "TelemetryTask", "class_telemetry_task.html", null ]

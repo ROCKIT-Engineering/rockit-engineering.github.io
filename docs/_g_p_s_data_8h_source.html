@@ -96,17 +96,29 @@ $(function(){initNavTree('_g_p_s_data_8h_source.html','',''); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;arduino_freertos.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html">    5</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_g_p_s_data.html">GPSData</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html#a78c25d42ef055552e34f88587e325ea5">    6</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_g_p_s_data.html#a78c25d42ef055552e34f88587e325ea5">latitude</a>;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html#ad59503abff6bbe89ab08aa60c037b4b0">    7</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_g_p_s_data.html#ad59503abff6bbe89ab08aa60c037b4b0">longitude</a>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html#a8c5881471ed232d8af6369fff1971d99">    8</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_g_p_s_data.html#a8c5881471ed232d8af6369fff1971d99">altitude</a>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html">    6</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_g_p_s_data.html">GPSData</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html#a78c25d42ef055552e34f88587e325ea5">    8</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_g_p_s_data.html#a78c25d42ef055552e34f88587e325ea5">latitude</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html#ad59503abff6bbe89ab08aa60c037b4b0">    9</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_g_p_s_data.html#ad59503abff6bbe89ab08aa60c037b4b0">longitude</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html#a8c5881471ed232d8af6369fff1971d99">   10</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_g_p_s_data.html#a8c5881471ed232d8af6369fff1971d99">altitude</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_g_p_s_data.html#a0e92a90354f6be61b502bab90e6a1035">   12</a></span>    String <a class="code hl_function" href="struct_g_p_s_data.html#a0e92a90354f6be61b502bab90e6a1035">toString</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">return</span> String(<span class="stringliteral">&quot;Lat: &quot;</span>) + String(<a class="code hl_variable" href="struct_g_p_s_data.html#a78c25d42ef055552e34f88587e325ea5">latitude</a>, 8) +</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            String(<span class="stringliteral">&quot; Lon: &quot;</span>) + String(<a class="code hl_variable" href="struct_g_p_s_data.html#ad59503abff6bbe89ab08aa60c037b4b0">longitude</a>, 8) +</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            String(<span class="stringliteral">&quot; Alt: &quot;</span>) + String(<a class="code hl_variable" href="struct_g_p_s_data.html#a8c5881471ed232d8af6369fff1971d99">altitude</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 </div>
-<div class="ttc" id="astruct_g_p_s_data_html"><div class="ttname"><a href="struct_g_p_s_data.html">GPSData</a></div><div class="ttdef"><b>Definition</b> GPSData.h:5</div></div>
-<div class="ttc" id="astruct_g_p_s_data_html_a78c25d42ef055552e34f88587e325ea5"><div class="ttname"><a href="struct_g_p_s_data.html#a78c25d42ef055552e34f88587e325ea5">GPSData::latitude</a></div><div class="ttdeci">double latitude</div><div class="ttdef"><b>Definition</b> GPSData.h:6</div></div>
-<div class="ttc" id="astruct_g_p_s_data_html_a8c5881471ed232d8af6369fff1971d99"><div class="ttname"><a href="struct_g_p_s_data.html#a8c5881471ed232d8af6369fff1971d99">GPSData::altitude</a></div><div class="ttdeci">double altitude</div><div class="ttdef"><b>Definition</b> GPSData.h:8</div></div>
-<div class="ttc" id="astruct_g_p_s_data_html_ad59503abff6bbe89ab08aa60c037b4b0"><div class="ttname"><a href="struct_g_p_s_data.html#ad59503abff6bbe89ab08aa60c037b4b0">GPSData::longitude</a></div><div class="ttdeci">double longitude</div><div class="ttdef"><b>Definition</b> GPSData.h:7</div></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="ttc" id="astruct_g_p_s_data_html"><div class="ttname"><a href="struct_g_p_s_data.html">GPSData</a></div><div class="ttdef"><b>Definition</b> GPSData.h:7</div></div>
+<div class="ttc" id="astruct_g_p_s_data_html_a0e92a90354f6be61b502bab90e6a1035"><div class="ttname"><a href="struct_g_p_s_data.html#a0e92a90354f6be61b502bab90e6a1035">GPSData::toString</a></div><div class="ttdeci">String toString() const</div><div class="ttdef"><b>Definition</b> GPSData.h:12</div></div>
+<div class="ttc" id="astruct_g_p_s_data_html_a78c25d42ef055552e34f88587e325ea5"><div class="ttname"><a href="struct_g_p_s_data.html#a78c25d42ef055552e34f88587e325ea5">GPSData::latitude</a></div><div class="ttdeci">double latitude</div><div class="ttdef"><b>Definition</b> GPSData.h:8</div></div>
+<div class="ttc" id="astruct_g_p_s_data_html_a8c5881471ed232d8af6369fff1971d99"><div class="ttname"><a href="struct_g_p_s_data.html#a8c5881471ed232d8af6369fff1971d99">GPSData::altitude</a></div><div class="ttdeci">double altitude</div><div class="ttdef"><b>Definition</b> GPSData.h:10</div></div>
+<div class="ttc" id="astruct_g_p_s_data_html_ad59503abff6bbe89ab08aa60c037b4b0"><div class="ttname"><a href="struct_g_p_s_data.html#ad59503abff6bbe89ab08aa60c037b4b0">GPSData::longitude</a></div><div class="ttdeci">double longitude</div><div class="ttdef"><b>Definition</b> GPSData.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
