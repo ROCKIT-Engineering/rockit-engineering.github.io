@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_task_wrapper__t" kind="class" language="C++" prot="public">
+    <compoundname>TaskWrapper_t</compoundname>
+    <basecompoundref refid="class_i_task_wrapper" prot="public" virt="non-virtual">ITaskWrapper</basecompoundref>
+    <includes refid="_task_wrapper__t_8h" local="no">TaskWrapper_t.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_task_wrapper__t_1af868e5c1b1f7a8054a3ae31ef7f97b9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ITaskWrapper</definition>
+        <argsstring></argsstring>
+        <name>ITaskWrapper</name>
+        <qualifiedname>TaskWrapper_t::ITaskWrapper</qualifiedname>
+        <param>
+          <type><ref refid="class_i_task_wrapper" kindref="compound">ITaskWrapper</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="22" column="18" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_task_wrapper__t_1a74b6da288994a8c052a122d1d4d12de2" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TaskWrapper_t&lt; T &gt;::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>TaskWrapper_t::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of the task, used by FreeRTOS </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="79" column="16" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_task_wrapper__t_1a0c532e767eff0e5a3d4b9359d07360f8" prot="private" static="no" mutable="no">
+        <type>UBaseType_t</type>
+        <definition>UBaseType_t TaskWrapper_t&lt; T &gt;::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <qualifiedname>TaskWrapper_t::priority</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FreeRTOS Task Priority. Lowest Priority is 1, shared by the IdleTask. Tasks with the same priority are executed in Round Robin. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="85" column="17" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_task_wrapper__t_1a93bfb77e21181cf38f47a6fc1b6a9cd6" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TaskWrapper_t&lt; T &gt;::stackDepth</definition>
+        <argsstring></argsstring>
+        <name>stackDepth</name>
+        <qualifiedname>TaskWrapper_t::stackDepth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How much Stack Space does this require. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="89" column="14" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_task_wrapper__t_1a063199a0782adc88e3b94253c6701529" prot="private" static="no" mutable="no">
+        <type>TaskHandle_t</type>
+        <definition>TaskHandle_t TaskWrapper_t&lt; T &gt;::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <qualifiedname>TaskWrapper_t::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The FreeRTOS Task Handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="93" column="18" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_task_wrapper__t_1a69c0ffaddc75e82e4a869d1124e9102f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TaskWrapper_t&lt; T &gt;::taskFrequency</definition>
+        <argsstring></argsstring>
+        <name>taskFrequency</name>
+        <qualifiedname>TaskWrapper_t::taskFrequency</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Frequency at which the task is deployed, important because CPU is freed up when a task is on delay </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="97" column="9" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_task_wrapper__t_1a1a4ecde6cc9dd58fbc7d6ab36df8dc56" prot="private" static="no" mutable="no">
+        <type>TickType_t</type>
+        <definition>TickType_t TaskWrapper_t&lt; T &gt;::lastTickTime</definition>
+        <argsstring></argsstring>
+        <name>lastTickTime</name>
+        <qualifiedname>TaskWrapper_t::lastTickTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The last absolute time at which the task was executed, needed to schedule vTaskDelay. Default = 0 important in so that <linebreak/>
+ an error is thrown if not set explicitly Note that vApplicationTickHook() could be used to execute task functions independently from task delay </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="103" column="16" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_task_wrapper__t_1a756507aeb0164323c36493484e040ea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void TaskWrapper_t&lt; T &gt;::suspend</definition>
+        <argsstring>() override</argsstring>
+        <name>suspend</name>
+        <qualifiedname>TaskWrapper_t::suspend</qualifiedname>
+        <reimplements refid="class_i_task_wrapper_1ac59fc6a94bd21c4efea675a38715f913">suspend</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Suspends the task. Calls onSuspend. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="25" column="10" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_wrapper__t_1abe6bb090f07f4244d77e14a9edb44e23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void TaskWrapper_t&lt; T &gt;::resume</definition>
+        <argsstring>() override</argsstring>
+        <name>resume</name>
+        <qualifiedname>TaskWrapper_t::resume</qualifiedname>
+        <reimplements refid="class_i_task_wrapper_1add28ecec6fb06794c93b7766def40a7b">resume</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resumes the task. Calls onResume. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="30" column="10" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_wrapper__t_1a8ae179e4a303dcec6ef5a8cd09d3be0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual TaskWrapper_t&lt; T &gt;::~TaskWrapper_t</definition>
+        <argsstring>()</argsstring>
+        <name>~TaskWrapper_t</name>
+        <qualifiedname>TaskWrapper_t::~TaskWrapper_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="35" column="13" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>static T &amp; TaskWrapper_t&lt; T &gt;::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>TaskWrapper_t::instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="39" column="14" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="39" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_task_wrapper__t_1a7ba4c703a334ebf38d7038bd6425e192" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TaskWrapper_t&lt; T &gt;::TaskWrapper_t</definition>
+        <argsstring>(const char *name, UBaseType_t priority=tskIDLE_PRIORITY+1, uint16_t stackDepth=128)</argsstring>
+        <name>TaskWrapper_t</name>
+        <qualifiedname>TaskWrapper_t::TaskWrapper_t</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>UBaseType_t</type>
+          <declname>priority</declname>
+          <defval>tskIDLE_PRIORITY+1</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>stackDepth</declname>
+          <defval>128</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="46" column="5" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_wrapper__t_1ab970e8b20a3eeec49e76ab9545f30bc9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskWrapper_t&lt; T &gt;::setFrequency</definition>
+        <argsstring>(int taskFrequency)</argsstring>
+        <name>setFrequency</name>
+        <qualifiedname>TaskWrapper_t::setFrequency</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>taskFrequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="51" column="10" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_task_wrapper__t_1ab2d6c4fb35eb0c5315078a8f58ae4c3f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void TaskWrapper_t&lt; T &gt;::taskEntry</definition>
+        <argsstring>(void *pvParameters)</argsstring>
+        <name>taskEntry</name>
+        <qualifiedname>TaskWrapper_t::taskEntry</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>pvParameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS/include/TaskWrapper_t.h" line="57" column="17" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="57" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Abstract base class for wrapping FreeRTOS tasks with start/stop control and lifecycle hooks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Usage:<itemizedlist>
+<listitem><para>Inherit from TaskWrapper and implement the <ref refid="class_i_task_wrapper_1a40fd8d54b5af1959987b4cc0d4588326" kindref="member">run()</ref> method with the task&apos;s main logic.</para>
+</listitem><listitem><para>Optionally override <ref refid="class_i_task_wrapper_1ac886f581a42a519b9a77657f5a632dbb" kindref="member">onSuspend()</ref> to perform actions right before the task is suspended.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the task (for debugging and identification). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The priority of the task (default: tskIDLE_PRIORITY + 1). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stackDepth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stack size for the task (default: 128). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ITaskWrapper</label>
+        <link refid="class_i_task_wrapper"/>
+      </node>
+      <node id="1">
+        <label>TaskWrapper_t&lt; T &gt;</label>
+        <link refid="class_task_wrapper__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ITaskWrapper</label>
+        <link refid="class_i_task_wrapper"/>
+      </node>
+      <node id="1">
+        <label>TaskWrapper_t&lt; T &gt;</label>
+        <link refid="class_task_wrapper__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/OS/include/TaskWrapper_t.h" line="21" column="1" bodyfile="src/OS/include/TaskWrapper_t.h" bodystart="21" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_task_wrapper__t_1a063199a0782adc88e3b94253c6701529" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>handle</name></member>
+      <member refid="class_i_task_wrapper_1a728aa2d1e0e2fdaf185e7110c0eee4a2" prot="public" virt="pure-virtual"><scope>TaskWrapper_t</scope><name>init</name></member>
+      <member refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" prot="public" virt="non-virtual"><scope>TaskWrapper_t</scope><name>instance</name></member>
+      <member refid="class_task_wrapper__t_1af868e5c1b1f7a8054a3ae31ef7f97b9d" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>ITaskWrapper</name></member>
+      <member refid="class_task_wrapper__t_1a1a4ecde6cc9dd58fbc7d6ab36df8dc56" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>lastTickTime</name></member>
+      <member refid="class_task_wrapper__t_1a74b6da288994a8c052a122d1d4d12de2" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>name</name></member>
+      <member refid="class_i_task_wrapper_1aadf4d89a473f9e21114b026cd50e9d73" prot="protected" virt="virtual"><scope>TaskWrapper_t</scope><name>onResume</name></member>
+      <member refid="class_i_task_wrapper_1ac886f581a42a519b9a77657f5a632dbb" prot="protected" virt="virtual"><scope>TaskWrapper_t</scope><name>onSuspend</name></member>
+      <member refid="class_task_wrapper__t_1a0c532e767eff0e5a3d4b9359d07360f8" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>priority</name></member>
+      <member refid="class_task_wrapper__t_1abe6bb090f07f4244d77e14a9edb44e23" prot="public" virt="virtual"><scope>TaskWrapper_t</scope><name>resume</name></member>
+      <member refid="class_i_task_wrapper_1a40fd8d54b5af1959987b4cc0d4588326" prot="public" virt="pure-virtual"><scope>TaskWrapper_t</scope><name>run</name></member>
+      <member refid="class_task_wrapper__t_1ab970e8b20a3eeec49e76ab9545f30bc9" prot="protected" virt="non-virtual"><scope>TaskWrapper_t</scope><name>setFrequency</name></member>
+      <member refid="class_task_wrapper__t_1a93bfb77e21181cf38f47a6fc1b6a9cd6" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>stackDepth</name></member>
+      <member refid="class_task_wrapper__t_1a756507aeb0164323c36493484e040ea3" prot="public" virt="virtual"><scope>TaskWrapper_t</scope><name>suspend</name></member>
+      <member refid="class_task_wrapper__t_1ab2d6c4fb35eb0c5315078a8f58ae4c3f" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>taskEntry</name></member>
+      <member refid="class_task_wrapper__t_1a69c0ffaddc75e82e4a869d1124e9102f" prot="private" virt="non-virtual"><scope>TaskWrapper_t</scope><name>taskFrequency</name></member>
+      <member refid="class_task_wrapper__t_1a7ba4c703a334ebf38d7038bd6425e192" prot="protected" virt="non-virtual"><scope>TaskWrapper_t</scope><name>TaskWrapper_t</name></member>
+      <member refid="class_task_wrapper__t_1a8ae179e4a303dcec6ef5a8cd09d3be0b" prot="public" virt="virtual"><scope>TaskWrapper_t</scope><name>~TaskWrapper_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

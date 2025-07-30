@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_states_8h" kind="file" language="C++">
+    <compoundname>States.h</compoundname>
+    <includes refid="_idle_state_8h" local="yes">IdleState.h</includes>
+    <includes refid="_debug_state_8h" local="yes">DebugState.h</includes>
+    <includes refid="_calibration_state_8h" local="yes">CalibrationState.h</includes>
+    <includedby refid="_f_s_m_task_8cpp" local="yes">src/Tasks/src/FSMTask.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>DropOS.h</label>
+        <link refid="_drop_o_s_8h"/>
+      </node>
+      <node id="6">
+        <label>ITaskWrapper_t.h</label>
+        <link refid="_i_task_wrapper__t_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OS/include/State_t.h</label>
+        <link refid="_state__t_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CalibrationState.h</label>
+        <link refid="_calibration_state_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>DebugState.h</label>
+        <link refid="_debug_state_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IdleState.h</label>
+        <link refid="_idle_state_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/States/include/States.h</label>
+        <link refid="_states_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/States/include/States.h</label>
+        <link refid="_states_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/Tasks/src/FSMTask.cpp</label>
+        <link refid="_f_s_m_task_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_idle_state_8h" kindref="compound">IdleState.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_debug_state_8h" kindref="compound">DebugState.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_calibration_state_8h" kindref="compound">CalibrationState.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/States/include/States.h"/>
+  </compounddef>
+</doxygen>

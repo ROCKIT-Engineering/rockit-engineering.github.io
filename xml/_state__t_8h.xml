@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_state__t_8h" kind="file" language="C++">
+    <compoundname>State_t.h</compoundname>
+    <includes local="no">functional</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_i_task_wrapper__t_8h" local="yes">ITaskWrapper_t.h</includes>
+    <includedby refid="_state__t_8cpp" local="yes">src/OS/src/State_t.cpp</includedby>
+    <includedby refid="_calibration_state_8h" local="yes">src/States/include/CalibrationState.h</includedby>
+    <includedby refid="_debug_state_8h" local="yes">src/States/include/DebugState.h</includedby>
+    <includedby refid="_idle_state_8h" local="yes">src/States/include/IdleState.h</includedby>
+    <includedby refid="_f_s_m_task_8cpp" local="yes">src/Tasks/src/FSMTask.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>DropOS.h</label>
+        <link refid="_drop_o_s_8h"/>
+      </node>
+      <node id="4">
+        <label>ITaskWrapper_t.h</label>
+        <link refid="_i_task_wrapper__t_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/OS/include/State_t.h</label>
+        <link refid="_state__t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>functional</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/OS/include/State_t.h</label>
+        <link refid="_state__t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/OS/src/DropOS.cpp</label>
+        <link refid="_drop_o_s_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/OS/src/State_t.cpp</label>
+        <link refid="_state__t_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/States/include/CalibrationState.h</label>
+        <link refid="_calibration_state_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/States/include/DebugState.h</label>
+        <link refid="_debug_state_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/States/include/IdleState.h</label>
+        <link refid="_idle_state_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/States/include/States.h</label>
+        <link refid="_states_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/States/src/CalibrationState.cpp</label>
+        <link refid="_calibration_state_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/States/src/DebugState.cpp</label>
+        <link refid="_debug_state_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/States/src/IdleState.cpp</label>
+        <link refid="_idle_state_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/Tasks/src/FSMTask.cpp</label>
+        <link refid="_f_s_m_task_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_state__t" prot="public">State_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_task_wrapper__t_8h" kindref="compound">ITaskWrapper_t.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_drop_o_s" kindref="compound">DropOS</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_state__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_state__t" kindref="compound">State_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="class_state__t_1a046861196afdb2e982361581c7f41637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_state__t" kindref="compound">State_t</ref>*<sp/><ref refid="class_state__t_1a046861196afdb2e982361581c7f41637" kindref="member">next_state</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_state__t_1ab340222f649c6b6b0d8ac7cf4a5bae93" kindref="member">enter</ref>()<sp/>final;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_state__t_1a14c0660e42b7e097766644d8aa366cae" kindref="member">exit</ref>()<sp/>final;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_state__t_1a7024654c41680e93ddc60e7e8022ce5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>std::vector&lt;<ref refid="class_i_task_wrapper" kindref="compound">ITaskWrapper</ref>*&gt;<sp/><ref refid="class_state__t_1a7024654c41680e93ddc60e7e8022ce5b" kindref="member">tasks</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">private:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/>static<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>currentlyActive<sp/>=<sp/>false;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="src/OS/include/State_t.h"/>
+  </compounddef>
+</doxygen>

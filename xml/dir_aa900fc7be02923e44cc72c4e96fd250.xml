@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_aa900fc7be02923e44cc72c4e96fd250" kind="dir">
+    <compoundname>src/Tasks/include</compoundname>
+    <innerfile refid="_dummy_sender_task_8h">DummySenderTask.h</innerfile>
+    <innerfile refid="_f_s_m_task_8h">FSMTask.h</innerfile>
+    <innerfile refid="_g_p_s_task_8h">GPSTask.h</innerfile>
+    <innerfile refid="_i_m_u_task_8h">IMUTask.h</innerfile>
+    <innerfile refid="_lidar_task_8h">LidarTask.h</innerfile>
+    <innerfile refid="_state_estimation_task_8h">StateEstimationTask.h</innerfile>
+    <innerfile refid="_tasks_8h">Tasks.h</innerfile>
+    <innerfile refid="_telemetry_task_8h">TelemetryTask.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Tasks/include/"/>
+  </compounddef>
+</doxygen>

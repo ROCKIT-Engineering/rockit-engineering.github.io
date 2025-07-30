@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_calibration_state_8cpp" kind="file" language="C++">
+    <compoundname>CalibrationState.cpp</compoundname>
+    <includes refid="_calibration_state_8h" local="yes">States/include/CalibrationState.h</includes>
+    <includes refid="_idle_state_8h" local="yes">States/include/IdleState.h</includes>
+    <includes refid="_tasks_8h" local="yes">Tasks/include/Tasks.h</includes>
+    <includes refid="_drop_o_s_8h" local="yes">OS/include/DropOS.h</includes>
+    <includes refid="_i_task_wrapper__t_8h" local="yes">OS/include/ITaskWrapper_t.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>DropOS.h</label>
+        <link refid="_drop_o_s_8h"/>
+      </node>
+      <node id="6">
+        <label>ITaskWrapper_t.h</label>
+        <link refid="_i_task_wrapper__t_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OS/include/State_t.h</label>
+        <link refid="_state__t_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>OS/include/TaskWrapper_t.h</label>
+        <link refid="_task_wrapper__t_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>States/include/CalibrationState.h</label>
+        <link refid="_calibration_state_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>States/include/IdleState.h</label>
+        <link refid="_idle_state_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/States/src/CalibrationState.cpp</label>
+        <link refid="_calibration_state_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Structs/include/LidarData.h</label>
+        <link refid="_lidar_data_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Tasks/include/DummySenderTask.h</label>
+        <link refid="_dummy_sender_task_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Tasks/include/FSMTask.h</label>
+        <link refid="_f_s_m_task_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Tasks/include/GPSTask.h</label>
+        <link refid="_g_p_s_task_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Tasks/include/IMUTask.h</label>
+        <link refid="_i_m_u_task_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Tasks/include/LidarTask.h</label>
+        <link refid="_lidar_task_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Tasks/include/StateEstimationTask.h</label>
+        <link refid="_state_estimation_task_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Tasks/include/Tasks.h</label>
+        <link refid="_tasks_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Tasks/include/TelemetryTask.h</label>
+        <link refid="_telemetry_task_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>TFLI2C.h</label>
+      </node>
+      <node id="20">
+        <label>TinyGPSPlus.h</label>
+      </node>
+      <node id="11">
+        <label>arduino_freertos.h</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="14">
+        <label>queue.h</label>
+      </node>
+      <node id="15">
+        <label>semphr.h</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_calibration_state_8h" kindref="compound">States/include/CalibrationState.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_idle_state_8h" kindref="compound">States/include/IdleState.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tasks_8h" kindref="compound">Tasks/include/Tasks.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_drop_o_s_8h" kindref="compound">OS/include/DropOS.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_task_wrapper__t_8h" kindref="compound">OS/include/ITaskWrapper_t.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_state__t" kindref="compound">State_t</ref>*<sp/><ref refid="class_calibration_state_1a4c0b43d00ff09f789694a4957d44e51f" kindref="member">CalibrationState::next_state</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(millis()<sp/>-<sp/>calibrationStartTime<sp/>&gt;=<sp/>10000)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>IdleState();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">std::vector&lt;ITaskWrapper*&gt;<sp/><ref refid="class_calibration_state_1af2ff37a87a5a27f1cc2bbea873ee5640" kindref="member">CalibrationState::tasks</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" kindref="member">LidarTask::instance</ref>(),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" kindref="member">TelemetryTask::instance</ref>(),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" kindref="member">GPSTask::instance</ref>(),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" kindref="member">IMUTask::instance</ref>(),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" kindref="member">DummySenderTask::instance</ref>(),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" kindref="member">StateEstimationTask::instance</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/States/src/CalibrationState.cpp"/>
+  </compounddef>
+</doxygen>

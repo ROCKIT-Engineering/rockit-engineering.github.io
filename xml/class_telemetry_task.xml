@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_telemetry_task" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>TelemetryTask</compoundname>
+    <basecompoundref refid="class_task_wrapper__t" prot="public" virt="non-virtual">TaskWrapper_t&lt; TelemetryTask &gt;</basecompoundref>
+    <includes refid="_telemetry_task_8h" local="no">TelemetryTask.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_telemetry_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TaskWrapper_t</definition>
+        <argsstring></argsstring>
+        <name>TaskWrapper_t</name>
+        <qualifiedname>TelemetryTask::TaskWrapper_t</qualifiedname>
+        <param>
+          <type><ref refid="class_task_wrapper__t" kindref="compound">TaskWrapper_t</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tasks/include/TelemetryTask.h" line="20" column="14" bodyfile="src/Tasks/include/TelemetryTask.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_telemetry_task_1a46abe41bb9f57a2e8960a6c667484494" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TelemetryTask::run</definition>
+        <argsstring>() override</argsstring>
+        <name>run</name>
+        <qualifiedname>TelemetryTask::run</qualifiedname>
+        <reimplements refid="class_i_task_wrapper_1a40fd8d54b5af1959987b4cc0d4588326">run</reimplements>
+        <briefdescription>
+<para>TODO: check this doc comment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Runs in a while-true loop as long as the task is not suspended. FreeRTOs will automatically assign time slices for this method to be called. Can end itself early and wait for its next time-slice by calling FreeRTOS delay functions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tasks/include/TelemetryTask.h" line="23" column="10" bodyfile="src/Tasks/src/TelemetryTask.cpp" bodystart="54" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_telemetry_task_1a8f55ae3e193abefbbd63af072f87878d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TelemetryTask::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <qualifiedname>TelemetryTask::init</qualifiedname>
+        <reimplements refid="class_i_task_wrapper_1a728aa2d1e0e2fdaf185e7110c0eee4a2">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called once before the run-loop gets started. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tasks/include/TelemetryTask.h" line="24" column="10" bodyfile="src/Tasks/src/TelemetryTask.cpp" bodystart="18" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_telemetry_task_1a074aa1d537777ee1b58841e7fa47e601" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TelemetryTask::TelemetryTask</definition>
+        <argsstring>()</argsstring>
+        <name>TelemetryTask</name>
+        <qualifiedname>TelemetryTask::TelemetryTask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tasks/include/TelemetryTask.h" line="27" column="14" bodyfile="src/Tasks/src/TelemetryTask.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ITaskWrapper</label>
+        <link refid="class_i_task_wrapper"/>
+      </node>
+      <node id="2">
+        <label>TaskWrapper_t&lt; TelemetryTask &gt;</label>
+        <link refid="class_task_wrapper__t"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TelemetryTask</label>
+        <link refid="class_telemetry_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ITaskWrapper</label>
+        <link refid="class_i_task_wrapper"/>
+      </node>
+      <node id="2">
+        <label>TaskWrapper_t&lt; TelemetryTask &gt;</label>
+        <link refid="class_task_wrapper__t"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TelemetryTask</label>
+        <link refid="class_telemetry_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Tasks/include/TelemetryTask.h" line="18" column="1" bodyfile="src/Tasks/include/TelemetryTask.h" bodystart="19" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_telemetry_task_1a8f55ae3e193abefbbd63af072f87878d" prot="public" virt="virtual"><scope>TelemetryTask</scope><name>init</name></member>
+      <member refid="class_task_wrapper__t_1a4cd207eb6571b254191f4609f912e1a6" prot="public" virt="non-virtual"><scope>TelemetryTask</scope><name>instance</name></member>
+      <member refid="class_i_task_wrapper_1aadf4d89a473f9e21114b026cd50e9d73" prot="protected" virt="virtual"><scope>TelemetryTask</scope><name>onResume</name></member>
+      <member refid="class_i_task_wrapper_1ac886f581a42a519b9a77657f5a632dbb" prot="protected" virt="virtual"><scope>TelemetryTask</scope><name>onSuspend</name></member>
+      <member refid="class_task_wrapper__t_1abe6bb090f07f4244d77e14a9edb44e23" prot="public" virt="virtual"><scope>TelemetryTask</scope><name>resume</name></member>
+      <member refid="class_telemetry_task_1a46abe41bb9f57a2e8960a6c667484494" prot="public" virt="virtual"><scope>TelemetryTask</scope><name>run</name></member>
+      <member refid="class_task_wrapper__t_1ab970e8b20a3eeec49e76ab9545f30bc9" prot="protected" virt="non-virtual"><scope>TelemetryTask</scope><name>setFrequency</name></member>
+      <member refid="class_task_wrapper__t_1a756507aeb0164323c36493484e040ea3" prot="public" virt="virtual"><scope>TelemetryTask</scope><name>suspend</name></member>
+      <member refid="class_telemetry_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" prot="private" virt="non-virtual"><scope>TelemetryTask</scope><name>TaskWrapper_t</name></member>
+      <member refid="class_task_wrapper__t_1a7ba4c703a334ebf38d7038bd6425e192" prot="protected" virt="non-virtual" ambiguityscope="TaskWrapper_t&lt; TelemetryTask &gt;::"><scope>TelemetryTask</scope><name>TaskWrapper_t</name></member>
+      <member refid="class_telemetry_task_1a074aa1d537777ee1b58841e7fa47e601" prot="protected" virt="non-virtual"><scope>TelemetryTask</scope><name>TelemetryTask</name></member>
+      <member refid="class_task_wrapper__t_1a8ae179e4a303dcec6ef5a8cd09d3be0b" prot="public" virt="virtual"><scope>TelemetryTask</scope><name>~TaskWrapper_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

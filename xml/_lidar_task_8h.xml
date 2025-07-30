@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_lidar_task_8h" kind="file" language="C++">
+    <compoundname>LidarTask.h</compoundname>
+    <includes refid="_task_wrapper__t_8h" local="yes">OS/include/TaskWrapper_t.h</includes>
+    <includes refid="_drop_o_s_8h" local="yes">OS/include/DropOS.h</includes>
+    <includes local="yes">TFLI2C.h</includes>
+    <includes local="yes">arduino_freertos.h</includes>
+    <includes local="yes">queue.h</includes>
+    <includes refid="_lidar_data_8h" local="yes">Structs/include/LidarData.h</includes>
+    <includedby refid="_tasks_8h" local="yes">src/Tasks/include/Tasks.h</includedby>
+    <includedby refid="_lidar_task_8cpp" local="yes">src/Tasks/src/LidarTask.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>DropOS.h</label>
+        <link refid="_drop_o_s_8h"/>
+      </node>
+      <node id="4">
+        <label>ITaskWrapper_t.h</label>
+        <link refid="_i_task_wrapper__t_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OS/include/TaskWrapper_t.h</label>
+        <link refid="_task_wrapper__t_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Structs/include/LidarData.h</label>
+        <link refid="_lidar_data_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Tasks/include/LidarTask.h</label>
+        <link refid="_lidar_task_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TFLI2C.h</label>
+      </node>
+      <node id="3">
+        <label>arduino_freertos.h</label>
+      </node>
+      <node id="7">
+        <label>queue.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/States/src/CalibrationState.cpp</label>
+        <link refid="_calibration_state_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/States/src/DebugState.cpp</label>
+        <link refid="_debug_state_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/States/src/IdleState.cpp</label>
+        <link refid="_idle_state_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/Tasks/include/LidarTask.h</label>
+        <link refid="_lidar_task_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/Tasks/include/Tasks.h</label>
+        <link refid="_tasks_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/Tasks/src/LidarTask.cpp</label>
+        <link refid="_lidar_task_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/Tasks/src/StateEstimationTask.cpp</label>
+        <link refid="_state_estimation_task_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_lidar_task" prot="public">LidarTask</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_task_wrapper__t_8h" kindref="compound">OS/include/TaskWrapper_t.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_drop_o_s_8h" kindref="compound">OS/include/DropOS.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TFLI2C.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;arduino_freertos.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_lidar_data_8h" kindref="compound">Structs/include/LidarData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_lidar_task" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_lidar_task_1a67081cd985cfb0cc9389992455403b27" kindref="member">LidarTask</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_lidar_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" kindref="member">TaskWrapper_t</ref>&lt;LidarTask&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="class_lidar_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_lidar_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" kindref="member">TaskWrapper_t</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lidar_task_1a3e255ab04ba11e8fba44415dfdf203ee" kindref="member">run</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lidar_task_1ad7458c082900cce7b6c2ecdaef1e8699" kindref="member">init</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>QueueHandle_t<sp/><ref refid="class_lidar_task_1a14ffdb81cf7aa663d48e837d15cbc188" kindref="member">getLidarQueue</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_lidar_task_1a67081cd985cfb0cc9389992455403b27" kindref="member">LidarTask</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>TFLI2C<sp/>lidarWriter;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>QueueHandle_t<sp/>xLidarQueue<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_lidar_data" kindref="compound">LidarData</ref><sp/>lastLidar{};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="src/Tasks/include/LidarTask.h"/>
+  </compounddef>
+</doxygen>

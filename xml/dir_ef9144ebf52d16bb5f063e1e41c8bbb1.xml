@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_ef9144ebf52d16bb5f063e1e41c8bbb1" kind="dir">
+    <compoundname>src/Structs/include</compoundname>
+    <innerfile refid="_lidar_data_8h">LidarData.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Structs/include/"/>
+  </compounddef>
+</doxygen>
