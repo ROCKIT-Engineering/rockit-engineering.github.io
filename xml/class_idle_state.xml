@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/States/include/IdleState.h" line="12" column="17" bodyfile="src/States/src/IdleState.cpp" bodystart="9" bodyend="15"/>
+        <location file="src/States/include/IdleState.h" line="12" column="17" bodyfile="src/States/src/IdleState.cpp" bodystart="9" bodyend="18"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

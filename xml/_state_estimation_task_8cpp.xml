@@ -215,7 +215,8 @@
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_telemetry_task_8h_1a1190c2c6208e2e36915a767c67024fe7" kindref="member">sendTelemetry</ref>(</highlight><highlight class="stringliteral">&quot;Error:<sp/>Queue<sp/>empty,<sp/>no<sp/>LiDAR<sp/>data<sp/>received.<sp/>Check<sp/>if<sp/>running<sp/>and<sp/>working<sp/>correctly&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
-<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/Tasks/src/StateEstimationTask.cpp"/>
   </compounddef>

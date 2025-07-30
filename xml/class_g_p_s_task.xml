@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tasks/include/GPSTask.h" line="15" column="10" bodyfile="src/Tasks/src/GPSTask.cpp" bodystart="22" bodyend="46"/>
+        <location file="src/Tasks/include/GPSTask.h" line="15" column="10" bodyfile="src/Tasks/src/GPSTask.cpp" bodystart="25" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_g_p_s_task_1a010ea6988f3bf7060ab6bc712c502ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tasks/include/GPSTask.h" line="16" column="10" bodyfile="src/Tasks/src/GPSTask.cpp" bodystart="16" bodyend="20"/>
+        <location file="src/Tasks/include/GPSTask.h" line="16" column="10" bodyfile="src/Tasks/src/GPSTask.cpp" bodystart="19" bodyend="23"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tasks/include/GPSTask.h" line="19" column="18" bodyfile="src/Tasks/src/GPSTask.cpp" bodystart="11" bodyend="14"/>
+        <location file="src/Tasks/include/GPSTask.h" line="19" column="18" bodyfile="src/Tasks/src/GPSTask.cpp" bodystart="14" bodyend="17"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

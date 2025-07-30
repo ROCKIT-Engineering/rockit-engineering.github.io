@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="struct_state_estimation_data" kind="struct" language="C++" prot="public">
+    <compoundname>StateEstimationData</compoundname>
+    <includes refid="_state_estimation_data_8h" local="no">StateEstimationData.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_state_estimation_data_1aa6a5f7f3841d7b4a1e77b2800948ca5f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double StateEstimationData::position[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>position</name>
+        <qualifiedname>StateEstimationData::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/StateEstimationData.h" line="6" column="12" bodyfile="src/Structs/include/StateEstimationData.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_state_estimation_data_1a1c743f52f722c88d56e45af6d49ec961" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double StateEstimationData::orientation[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>orientation</name>
+        <qualifiedname>StateEstimationData::orientation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/StateEstimationData.h" line="7" column="12" bodyfile="src/Structs/include/StateEstimationData.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_state_estimation_data_1a8a36b8f5a01e37fd10c25827e2557e69" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double StateEstimationData::velocity[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>velocity</name>
+        <qualifiedname>StateEstimationData::velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/StateEstimationData.h" line="8" column="12" bodyfile="src/Structs/include/StateEstimationData.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_state_estimation_data_1a71aef0c7c8e01494aa9c0bd193071890" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double StateEstimationData::angularVelocity[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>angularVelocity</name>
+        <qualifiedname>StateEstimationData::angularVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/StateEstimationData.h" line="9" column="12" bodyfile="src/Structs/include/StateEstimationData.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_state_estimation_data_1a48f1dd1d513f4f1818a382c904b59fb5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double StateEstimationData::timeStamp</definition>
+        <argsstring></argsstring>
+        <name>timeStamp</name>
+        <qualifiedname>StateEstimationData::timeStamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/StateEstimationData.h" line="10" column="12" bodyfile="src/Structs/include/StateEstimationData.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Structs/include/StateEstimationData.h" line="5" column="1" bodyfile="src/Structs/include/StateEstimationData.h" bodystart="5" bodyend="11"/>
+    <listofallmembers>
+      <member refid="struct_state_estimation_data_1a71aef0c7c8e01494aa9c0bd193071890" prot="public" virt="non-virtual"><scope>StateEstimationData</scope><name>angularVelocity</name></member>
+      <member refid="struct_state_estimation_data_1a1c743f52f722c88d56e45af6d49ec961" prot="public" virt="non-virtual"><scope>StateEstimationData</scope><name>orientation</name></member>
+      <member refid="struct_state_estimation_data_1aa6a5f7f3841d7b4a1e77b2800948ca5f" prot="public" virt="non-virtual"><scope>StateEstimationData</scope><name>position</name></member>
+      <member refid="struct_state_estimation_data_1a48f1dd1d513f4f1818a382c904b59fb5" prot="public" virt="non-virtual"><scope>StateEstimationData</scope><name>timeStamp</name></member>
+      <member refid="struct_state_estimation_data_1a8a36b8f5a01e37fd10c25827e2557e69" prot="public" virt="non-virtual"><scope>StateEstimationData</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

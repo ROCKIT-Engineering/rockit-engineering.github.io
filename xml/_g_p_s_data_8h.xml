@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_g_p_s_data_8h" kind="file" language="C++">
+    <compoundname>GPSData.h</compoundname>
+    <includes local="yes">arduino_freertos.h</includes>
+    <includedby refid="_kalman_hooks_8h" local="yes">src/GNC/include/KalmanHooks.h</includedby>
+    <includedby refid="_g_p_s_task_8cpp" local="yes">src/Tasks/src/GPSTask.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/Structs/include/GPSData.h</label>
+        <link refid="_g_p_s_data_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>arduino_freertos.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/GNC/include/KalmanHooks.h</label>
+        <link refid="_kalman_hooks_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/GNC/src/KalmanHooks.cpp</label>
+        <link refid="_kalman_hooks_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/Structs/include/GPSData.h</label>
+        <link refid="_g_p_s_data_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/Tasks/src/GPSTask.cpp</label>
+        <link refid="_g_p_s_task_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_g_p_s_data" prot="public">GPSData</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;arduino_freertos.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="struct_g_p_s_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_g_p_s_data" kindref="compound">GPSData</ref><sp/>{</highlight></codeline>
+<codeline lineno="6" refid="struct_g_p_s_data_1a78c25d42ef055552e34f88587e325ea5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_g_p_s_data_1a78c25d42ef055552e34f88587e325ea5" kindref="member">latitude</ref>;</highlight></codeline>
+<codeline lineno="7" refid="struct_g_p_s_data_1ad59503abff6bbe89ab08aa60c037b4b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_g_p_s_data_1ad59503abff6bbe89ab08aa60c037b4b0" kindref="member">longitude</ref>;</highlight></codeline>
+<codeline lineno="8" refid="struct_g_p_s_data_1a8c5881471ed232d8af6369fff1971d99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_g_p_s_data_1a8c5881471ed232d8af6369fff1971d99" kindref="member">altitude</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="src/Structs/include/GPSData.h"/>
+  </compounddef>
+</doxygen>

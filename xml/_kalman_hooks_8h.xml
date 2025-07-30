@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_kalman_hooks_8h" kind="file" language="C++">
+    <compoundname>KalmanHooks.h</compoundname>
+    <includes refid="_i_m_u_data_8h" local="yes">Structs/include/IMUData.h</includes>
+    <includes refid="_g_p_s_data_8h" local="yes">Structs/include/GPSData.h</includes>
+    <includes refid="_lidar_data_8h" local="yes">Structs/include/LidarData.h</includes>
+    <includes refid="_state_estimation_data_8h" local="yes">Structs/include/StateEstimationData.h</includes>
+    <includedby refid="_kalman_hooks_8cpp" local="yes">src/GNC/src/KalmanHooks.cpp</includedby>
+    <includedby refid="_g_p_s_task_8cpp" local="yes">src/Tasks/src/GPSTask.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/GNC/include/KalmanHooks.h</label>
+        <link refid="_kalman_hooks_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Structs/include/GPSData.h</label>
+        <link refid="_g_p_s_data_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Structs/include/IMUData.h</label>
+        <link refid="_i_m_u_data_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Structs/include/LidarData.h</label>
+        <link refid="_lidar_data_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Structs/include/StateEstimationData.h</label>
+        <link refid="_state_estimation_data_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>arduino_freertos.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/GNC/include/KalmanHooks.h</label>
+        <link refid="_kalman_hooks_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/GNC/src/KalmanHooks.cpp</label>
+        <link refid="_kalman_hooks_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/Tasks/src/GPSTask.cpp</label>
+        <link refid="_g_p_s_task_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_kalman_hooks_8h_1a862e8457a815a604999ece8982dae788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void kalmanUpdatedIMU</definition>
+        <argsstring>(IMUData *imuData)</argsstring>
+        <name>kalmanUpdatedIMU</name>
+        <param>
+          <type><ref refid="struct_i_m_u_data" kindref="compound">IMUData</ref> *</type>
+          <declname>imuData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GNC/include/KalmanHooks.h" line="8" column="6" declfile="src/GNC/include/KalmanHooks.h" declline="8" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_kalman_hooks_8h_1a3bfe182da5f6ba6c7c4b96e4f9f3a2da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void kalmanUpdatedGPS</definition>
+        <argsstring>(GPSData *gpsData)</argsstring>
+        <name>kalmanUpdatedGPS</name>
+        <param>
+          <type><ref refid="struct_g_p_s_data" kindref="compound">GPSData</ref> *</type>
+          <declname>gpsData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GNC/include/KalmanHooks.h" line="10" column="6" declfile="src/GNC/include/KalmanHooks.h" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_kalman_hooks_8h_1afe990068a51ec581cc43bca6d3591d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void kalmanUpdatedLidar</definition>
+        <argsstring>(LidarData *lidarData)</argsstring>
+        <name>kalmanUpdatedLidar</name>
+        <param>
+          <type><ref refid="struct_lidar_data" kindref="compound">LidarData</ref> *</type>
+          <declname>lidarData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GNC/include/KalmanHooks.h" line="12" column="6" declfile="src/GNC/include/KalmanHooks.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_kalman_hooks_8h_1aba5078b1cb614879cf5d2ca5a961fd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_state_estimation_data" kindref="compound">StateEstimationData</ref></type>
+        <definition>StateEstimationData getKalmanEstimation</definition>
+        <argsstring>()</argsstring>
+        <name>getKalmanEstimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GNC/include/KalmanHooks.h" line="14" column="21" bodyfile="src/GNC/src/KalmanHooks.cpp" bodystart="15" bodyend="32" declfile="src/GNC/include/KalmanHooks.h" declline="14" declcolumn="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_m_u_data_8h" kindref="compound">Structs/include/IMUData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_s_data_8h" kindref="compound">Structs/include/GPSData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_lidar_data_8h" kindref="compound">Structs/include/LidarData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_state_estimation_data_8h" kindref="compound">Structs/include/StateEstimationData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_kalman_hooks_8h_1a862e8457a815a604999ece8982dae788" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_kalman_hooks_8h_1a862e8457a815a604999ece8982dae788" kindref="member">kalmanUpdatedIMU</ref>(<ref refid="struct_i_m_u_data" kindref="compound">IMUData</ref>*<sp/>imuData);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_kalman_hooks_8h_1a3bfe182da5f6ba6c7c4b96e4f9f3a2da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_kalman_hooks_8h_1a3bfe182da5f6ba6c7c4b96e4f9f3a2da" kindref="member">kalmanUpdatedGPS</ref>(<ref refid="struct_g_p_s_data" kindref="compound">GPSData</ref>*<sp/>gpsData);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_kalman_hooks_8h_1afe990068a51ec581cc43bca6d3591d40" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_kalman_hooks_8h_1afe990068a51ec581cc43bca6d3591d40" kindref="member">kalmanUpdatedLidar</ref>(<ref refid="struct_lidar_data" kindref="compound">LidarData</ref>*<sp/>lidarData);<sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="struct_state_estimation_data" kindref="compound">StateEstimationData</ref><sp/><ref refid="_kalman_hooks_8h_1aba5078b1cb614879cf5d2ca5a961fd96" kindref="member">getKalmanEstimation</ref>();</highlight></codeline>
+    </programlisting>
+    <location file="src/GNC/include/KalmanHooks.h"/>
+  </compounddef>
+</doxygen>

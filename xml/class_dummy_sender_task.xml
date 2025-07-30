@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tasks/include/DummySenderTask.h" line="15" column="10" bodyfile="src/Tasks/src/DummySenderTask.cpp" bodystart="17" bodyend="20"/>
+        <location file="src/Tasks/include/DummySenderTask.h" line="15" column="10" bodyfile="src/Tasks/src/DummySenderTask.cpp" bodystart="17" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="class_dummy_sender_task_1ab0ed0ed9403685aaae330bd1c85b0933" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>

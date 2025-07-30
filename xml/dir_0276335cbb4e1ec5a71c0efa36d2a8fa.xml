@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_0276335cbb4e1ec5a71c0efa36d2a8fa" kind="dir">
+    <compoundname>src/GNC</compoundname>
+    <innerdir refid="dir_ea6436e774bbb8d258b9e8363743ed4c">src/GNC/include</innerdir>
+    <innerdir refid="dir_1302842b980073eb94caf56e29978f49">src/GNC/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GNC/"/>
+  </compounddef>
+</doxygen>

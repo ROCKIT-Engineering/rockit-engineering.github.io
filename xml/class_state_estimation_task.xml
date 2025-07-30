@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tasks/include/StateEstimationTask.h" line="18" column="10" bodyfile="src/Tasks/src/StateEstimationTask.cpp" bodystart="32" bodyend="44"/>
+        <location file="src/Tasks/include/StateEstimationTask.h" line="18" column="10" bodyfile="src/Tasks/src/StateEstimationTask.cpp" bodystart="32" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="class_state_estimation_task_1ae47174728da2176c7f7c40af97aac827" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>

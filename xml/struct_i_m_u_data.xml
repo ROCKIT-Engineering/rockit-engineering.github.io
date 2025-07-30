@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="struct_i_m_u_data" kind="struct" language="C++" prot="public">
+    <compoundname>IMUData</compoundname>
+    <includes refid="_i_m_u_data_8h" local="no">IMUData.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i_m_u_data_1ac2bbf07d4d0f714b701740d59eb919d7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMUData::acceleration[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>acceleration</name>
+        <qualifiedname>IMUData::acceleration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/IMUData.h" line="6" column="12" bodyfile="src/Structs/include/IMUData.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_m_u_data_1a79b14bac66c9532dbb9fbf0f9bec274a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMUData::gyroscope[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>gyroscope</name>
+        <qualifiedname>IMUData::gyroscope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/IMUData.h" line="7" column="12" bodyfile="src/Structs/include/IMUData.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_m_u_data_1a3f014b809cfbef8a9b2d4448fa22bef3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMUData::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <qualifiedname>IMUData::temperature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Structs/include/IMUData.h" line="8" column="12" bodyfile="src/Structs/include/IMUData.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Structs/include/IMUData.h" line="5" column="1" bodyfile="src/Structs/include/IMUData.h" bodystart="5" bodyend="9"/>
+    <listofallmembers>
+      <member refid="struct_i_m_u_data_1ac2bbf07d4d0f714b701740d59eb919d7" prot="public" virt="non-virtual"><scope>IMUData</scope><name>acceleration</name></member>
+      <member refid="struct_i_m_u_data_1a79b14bac66c9532dbb9fbf0f9bec274a" prot="public" virt="non-virtual"><scope>IMUData</scope><name>gyroscope</name></member>
+      <member refid="struct_i_m_u_data_1a3f014b809cfbef8a9b2d4448fa22bef3" prot="public" virt="non-virtual"><scope>IMUData</scope><name>temperature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

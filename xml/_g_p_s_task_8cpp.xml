@@ -8,8 +8,22 @@
     <includes refid="_task_wrapper__t_8h" local="yes">OS/include/TaskWrapper_t.h</includes>
     <includes refid="_drop_o_s_8h" local="yes">OS/include/DropOS.h</includes>
     <includes refid="_o_s___c_o_n_f_i_g_8h" local="yes">OS_CONFIG.h</includes>
+    <includes refid="_g_p_s_data_8h" local="yes">Structs/include/GPSData.h</includes>
     <includes refid="_telemetry_task_8h" local="yes">Tasks/include/TelemetryTask.h</includes>
+    <includes refid="_kalman_hooks_8h" local="yes">GNC/include/KalmanHooks.h</includes>
     <incdepgraph>
+      <node id="13">
+        <label>GNC/include/KalmanHooks.h</label>
+        <link refid="_kalman_hooks_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
       <node id="7">
         <label>DropOS.h</label>
         <link refid="_drop_o_s_8h"/>
@@ -34,6 +48,30 @@
         <label>OS_CONFIG.h</label>
         <link refid="_o_s___c_o_n_f_i_g_8h"/>
       </node>
+      <node id="9">
+        <label>Structs/include/GPSData.h</label>
+        <link refid="_g_p_s_data_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Structs/include/IMUData.h</label>
+        <link refid="_i_m_u_data_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Structs/include/LidarData.h</label>
+        <link refid="_lidar_data_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Structs/include/StateEstimationData.h</label>
+        <link refid="_state_estimation_data_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>Tasks/include/GPSTask.h</label>
         <link refid="_g_p_s_task_8h"/>
@@ -42,14 +80,14 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>Tasks/include/TelemetryTask.h</label>
         <link refid="_telemetry_task_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
         <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
@@ -73,6 +111,10 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>TinyGPSPlus.h</label>
@@ -80,10 +122,10 @@
       <node id="5">
         <label>arduino_freertos.h</label>
       </node>
-      <node id="10">
+      <node id="11">
         <label>queue.h</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>semphr.h</label>
       </node>
     </incdepgraph>
@@ -97,47 +139,50 @@
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;arduino_freertos.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TinyGPSPlus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_task_wrapper__t_8h" kindref="compound">OS/include/TaskWrapper_t.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_drop_o_s_8h" kindref="compound">OS/include/DropOS.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_o_s___c_o_n_f_i_g_8h" kindref="compound">OS_CONFIG.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_telemetry_task_8h" kindref="compound">Tasks/include/TelemetryTask.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><ref refid="class_g_p_s_task_1a796bbc3c991ad40d49a7894f72471f9a" kindref="member">GPSTask::GPSTask</ref>()</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_task_wrapper__t" kindref="compound">TaskWrapper_t</ref>(</highlight><highlight class="stringliteral">&quot;GPSTask&quot;</highlight><highlight class="normal">,<sp/>2,<sp/>256)<sp/></highlight></codeline>
-<codeline lineno="13"><highlight class="normal">{<sp/></highlight></codeline>
-<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_s_task_1a010ea6988f3bf7060ab6bc712c502ca1" kindref="member">GPSTask::init</ref>()<sp/></highlight></codeline>
-<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_task_wrapper__t_1ab970e8b20a3eeec49e76ab9545f30bc9" kindref="member">setFrequency</ref>(<ref refid="_o_s___c_o_n_f_i_g_8h_1ac448d5f785d219fab70dff318a64226c" kindref="member">GPS_HZ</ref>);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial1.begin(115200);<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_s_task_1a7f74e369d991457063cdab8aa23f9009" kindref="member">GPSTask::run</ref>()</highlight></codeline>
-<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Serial1.available()<sp/>&gt;<sp/>0)</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>gpsString<sp/>=<sp/>Serial1.readStringUntil(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>gpsData<sp/>=<sp/>gpsString.c_str();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*gpsData)</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.encode(*gpsData++))</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lat<sp/>=<sp/><ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.location.lat();</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lon<sp/>=<sp/><ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.location.lng();</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alt<sp/>=<sp/><ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.altitude.meters();</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>position<sp/>=<sp/>String(</highlight><highlight class="stringliteral">&quot;Lat:<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>String(lat,<sp/>8)</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>String(</highlight><highlight class="stringliteral">&quot;<sp/>Lon:<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>String(lon,<sp/>8)</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>String(</highlight><highlight class="stringliteral">&quot;<sp/>Alt:<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>String(alt);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_telemetry_task_8h_1a1190c2c6208e2e36915a767c67024fe7" kindref="member">sendTelemetry</ref>(position.c_str());</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_task_wrapper__t_8h" kindref="compound">OS/include/TaskWrapper_t.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_drop_o_s_8h" kindref="compound">OS/include/DropOS.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_o_s___c_o_n_f_i_g_8h" kindref="compound">OS_CONFIG.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_s_data_8h" kindref="compound">Structs/include/GPSData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_telemetry_task_8h" kindref="compound">Tasks/include/TelemetryTask.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_kalman_hooks_8h" kindref="compound">GNC/include/KalmanHooks.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="class_g_p_s_task_1a796bbc3c991ad40d49a7894f72471f9a" kindref="member">GPSTask::GPSTask</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_task_wrapper__t" kindref="compound">TaskWrapper_t</ref>(</highlight><highlight class="stringliteral">&quot;GPSTask&quot;</highlight><highlight class="normal">,<sp/>2,<sp/>256)<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_s_task_1a010ea6988f3bf7060ab6bc712c502ca1" kindref="member">GPSTask::init</ref>()<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_task_wrapper__t_1ab970e8b20a3eeec49e76ab9545f30bc9" kindref="member">setFrequency</ref>(<ref refid="_o_s___c_o_n_f_i_g_8h_1ac448d5f785d219fab70dff318a64226c" kindref="member">GPS_HZ</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial1.begin(115200);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_s_task_1a7f74e369d991457063cdab8aa23f9009" kindref="member">GPSTask::run</ref>()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Serial1.available()<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>gpsString<sp/>=<sp/>Serial1.readStringUntil(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>gpsData<sp/>=<sp/>gpsString.c_str();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*gpsData)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.encode(*gpsData++))</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lat<sp/>=<sp/><ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.location.lat();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lon<sp/>=<sp/><ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.location.lng();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alt<sp/>=<sp/><ref refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kindref="member">gps</ref>.altitude.meters();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>position<sp/>=<sp/>String(</highlight><highlight class="stringliteral">&quot;Lat:<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>String(lat,<sp/>8)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>String(</highlight><highlight class="stringliteral">&quot;<sp/>Lon:<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>String(lon,<sp/>8)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>String(</highlight><highlight class="stringliteral">&quot;<sp/>Alt:<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>String(alt);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_telemetry_task_8h_1a1190c2c6208e2e36915a767c67024fe7" kindref="member">sendTelemetry</ref>(position.c_str());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/Tasks/src/GPSTask.cpp"/>
   </compounddef>

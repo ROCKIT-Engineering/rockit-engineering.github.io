@@ -115,7 +115,7 @@
       </memberdef>
       <memberdef kind="define" id="_o_s___c_o_n_f_i_g_8h_1a6e7caab0dd523c7dd48b95dc7ac4c01c" prot="public" static="no">
         <name>DUMMY_HZ</name>
-        <initializer>1</initializer>
+        <initializer>4</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -135,6 +135,17 @@
         </inbodydescription>
         <location file="src/OS_CONFIG.h" line="12" column="9" bodyfile="src/OS_CONFIG.h" bodystart="12" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="_o_s___c_o_n_f_i_g_8h_1a51d45ddac51705105e951d6aa0da219a" prot="public" static="no">
+        <name>DEBUG_LOGGING</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OS_CONFIG.h" line="14" column="9" bodyfile="src/OS_CONFIG.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -151,8 +162,10 @@
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9" refid="_o_s___c_o_n_f_i_g_8h_1a3a217822b833490b9e4ee5e9a2a6ca3e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TELEMETRY_HZ<sp/>200</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10" refid="_o_s___c_o_n_f_i_g_8h_1aa840e7646d8d30cb98887480d49a93a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSM_HZ<sp/>200</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="_o_s___c_o_n_f_i_g_8h_1a6e7caab0dd523c7dd48b95dc7ac4c01c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUMMY_HZ<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12" refid="_o_s___c_o_n_f_i_g_8h_1a109a2bf274129869136183fc1fc5ba11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>State_ESTIMATION_HZ<sp/>5</highlight></codeline>
+<codeline lineno="11" refid="_o_s___c_o_n_f_i_g_8h_1a6e7caab0dd523c7dd48b95dc7ac4c01c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUMMY_HZ<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_o_s___c_o_n_f_i_g_8h_1a109a2bf274129869136183fc1fc5ba11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>State_ESTIMATION_HZ<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_o_s___c_o_n_f_i_g_8h_1a51d45ddac51705105e951d6aa0da219a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_LOGGING<sp/>0</highlight></codeline>
     </programlisting>
     <location file="src/OS_CONFIG.h"/>
   </compounddef>

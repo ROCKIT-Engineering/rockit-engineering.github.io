@@ -29,6 +29,11 @@
     <member refid="class_f_s_m_task_1a08cd96249a1062f45796e957c02f8561" kind="function"><name>init</name></member>
     <member refid="class_f_s_m_task_1acc045c06ae314142274652dac8825f18" kind="function"><name>FSMTask</name></member>
   </compound>
+  <compound refid="struct_g_p_s_data" kind="struct"><name>GPSData</name>
+    <member refid="struct_g_p_s_data_1a78c25d42ef055552e34f88587e325ea5" kind="variable"><name>latitude</name></member>
+    <member refid="struct_g_p_s_data_1ad59503abff6bbe89ab08aa60c037b4b0" kind="variable"><name>longitude</name></member>
+    <member refid="struct_g_p_s_data_1a8c5881471ed232d8af6369fff1971d99" kind="variable"><name>altitude</name></member>
+  </compound>
   <compound refid="class_g_p_s_task" kind="class"><name>GPSTask</name>
     <member refid="class_g_p_s_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" kind="friend"><name>TaskWrapper_t</name></member>
     <member refid="class_g_p_s_task_1aa47e8b8d244c44a446cb3bd15b3c4340" kind="variable"><name>gps</name></member>
@@ -39,6 +44,11 @@
   <compound refid="class_idle_state" kind="class"><name>IdleState</name>
     <member refid="class_idle_state_1a65ede556b1bcc1ac605d6eae016bba3f" kind="function"><name>next_state</name></member>
     <member refid="class_idle_state_1abb6813618956aea7da1e2886f2baf77f" kind="function"><name>tasks</name></member>
+  </compound>
+  <compound refid="struct_i_m_u_data" kind="struct"><name>IMUData</name>
+    <member refid="struct_i_m_u_data_1ac2bbf07d4d0f714b701740d59eb919d7" kind="variable"><name>acceleration</name></member>
+    <member refid="struct_i_m_u_data_1a79b14bac66c9532dbb9fbf0f9bec274a" kind="variable"><name>gyroscope</name></member>
+    <member refid="struct_i_m_u_data_1a3f014b809cfbef8a9b2d4448fa22bef3" kind="variable"><name>temperature</name></member>
   </compound>
   <compound refid="class_i_m_u_task" kind="class"><name>IMUTask</name>
     <member refid="class_i_m_u_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" kind="friend"><name>TaskWrapper_t</name></member>
@@ -74,6 +84,13 @@
     <member refid="class_state__t_1a14c0660e42b7e097766644d8aa366cae" kind="function"><name>exit</name></member>
     <member refid="class_state__t_1a7024654c41680e93ddc60e7e8022ce5b" kind="function"><name>tasks</name></member>
   </compound>
+  <compound refid="struct_state_estimation_data" kind="struct"><name>StateEstimationData</name>
+    <member refid="struct_state_estimation_data_1aa6a5f7f3841d7b4a1e77b2800948ca5f" kind="variable"><name>position</name></member>
+    <member refid="struct_state_estimation_data_1a1c743f52f722c88d56e45af6d49ec961" kind="variable"><name>orientation</name></member>
+    <member refid="struct_state_estimation_data_1a8a36b8f5a01e37fd10c25827e2557e69" kind="variable"><name>velocity</name></member>
+    <member refid="struct_state_estimation_data_1a71aef0c7c8e01494aa9c0bd193071890" kind="variable"><name>angularVelocity</name></member>
+    <member refid="struct_state_estimation_data_1a48f1dd1d513f4f1818a382c904b59fb5" kind="variable"><name>timeStamp</name></member>
+  </compound>
   <compound refid="class_state_estimation_task" kind="class"><name>StateEstimationTask</name>
     <member refid="class_state_estimation_task_1ac4a28d78b2f7d3d899893ce5fdce4bb8" kind="friend"><name>TaskWrapper_t</name></member>
     <member refid="class_state_estimation_task_1ae4ba914da50d15244e532745d30eda92" kind="variable"><name>xLidarQueue</name></member>
@@ -106,6 +123,18 @@
   </compound>
   <compound refid="namespacearduino" kind="namespace"><name>arduino</name>
   </compound>
+  <compound refid="_kalman_hooks_8h" kind="file"><name>KalmanHooks.h</name>
+    <member refid="_kalman_hooks_8h_1a862e8457a815a604999ece8982dae788" kind="function"><name>kalmanUpdatedIMU</name></member>
+    <member refid="_kalman_hooks_8h_1a3bfe182da5f6ba6c7c4b96e4f9f3a2da" kind="function"><name>kalmanUpdatedGPS</name></member>
+    <member refid="_kalman_hooks_8h_1afe990068a51ec581cc43bca6d3591d40" kind="function"><name>kalmanUpdatedLidar</name></member>
+    <member refid="_kalman_hooks_8h_1aba5078b1cb614879cf5d2ca5a961fd96" kind="function"><name>getKalmanEstimation</name></member>
+  </compound>
+  <compound refid="_kalman_hooks_8cpp" kind="file"><name>KalmanHooks.cpp</name>
+    <member refid="_kalman_hooks_8cpp_1aa4e6320ed93c275f2380dc29df2d2789" kind="function"><name>kalmanUpdatedIMU</name></member>
+    <member refid="_kalman_hooks_8cpp_1ac6dd26af8a0d384384c5a524bb715330" kind="function"><name>kalmanUpdatedGPS</name></member>
+    <member refid="_kalman_hooks_8cpp_1a1c489e15dad6af7ab09d2b74c65cd8f9" kind="function"><name>kalmanUpdatedLidar</name></member>
+    <member refid="_kalman_hooks_8cpp_1aba5078b1cb614879cf5d2ca5a961fd96" kind="function"><name>getKalmanEstimation</name></member>
+  </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
     <member refid="main_8cpp_1a3f4bfbb2518185ab54fe660cf86ea2db" kind="function"><name>__attribute__</name></member>
     <member refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
@@ -130,6 +159,7 @@
     <member refid="_o_s___c_o_n_f_i_g_8h_1aa840e7646d8d30cb98887480d49a93a5" kind="define"><name>FSM_HZ</name></member>
     <member refid="_o_s___c_o_n_f_i_g_8h_1a6e7caab0dd523c7dd48b95dc7ac4c01c" kind="define"><name>DUMMY_HZ</name></member>
     <member refid="_o_s___c_o_n_f_i_g_8h_1a109a2bf274129869136183fc1fc5ba11" kind="define"><name>State_ESTIMATION_HZ</name></member>
+    <member refid="_o_s___c_o_n_f_i_g_8h_1a51d45ddac51705105e951d6aa0da219a" kind="define"><name>DEBUG_LOGGING</name></member>
   </compound>
   <compound refid="pins_8h" kind="file"><name>pins.h</name>
     <member refid="pins_8h_1ae8b9570168a1a0c41c225e640898d4fe" kind="variable"><name>lidarAddresses</name></member>
@@ -152,7 +182,13 @@
   </compound>
   <compound refid="_idle_state_8cpp" kind="file"><name>IdleState.cpp</name>
   </compound>
+  <compound refid="_g_p_s_data_8h" kind="file"><name>GPSData.h</name>
+  </compound>
+  <compound refid="_i_m_u_data_8h" kind="file"><name>IMUData.h</name>
+  </compound>
   <compound refid="_lidar_data_8h" kind="file"><name>LidarData.h</name>
+  </compound>
+  <compound refid="_state_estimation_data_8h" kind="file"><name>StateEstimationData.h</name>
   </compound>
   <compound refid="_dummy_sender_task_8h" kind="file"><name>DummySenderTask.h</name>
   </compound>
@@ -190,6 +226,10 @@
     <member refid="_telemetry_task_8cpp_1a994555402c78706aeb504f3da38dfcc2" kind="variable"><name>xSerialMutex</name></member>
     <member refid="_telemetry_task_8cpp_1a1190c2c6208e2e36915a767c67024fe7" kind="function"><name>sendTelemetry</name></member>
   </compound>
+  <compound refid="dir_0276335cbb4e1ec5a71c0efa36d2a8fa" kind="dir"><name>src/GNC</name>
+  </compound>
+  <compound refid="dir_ea6436e774bbb8d258b9e8363743ed4c" kind="dir"><name>src/GNC/include</name>
+  </compound>
   <compound refid="dir_5defcd96e2744d973b853d7f584d1b65" kind="dir"><name>src/OS/include</name>
   </compound>
   <compound refid="dir_343d71e2e7bcc7ac58105c144231f9ab" kind="dir"><name>src/States/include</name>
@@ -201,6 +241,8 @@
   <compound refid="dir_54f5ad4811a0c3ecf9d1d7b037b5d3a4" kind="dir"><name>src/OS</name>
   </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_1302842b980073eb94caf56e29978f49" kind="dir"><name>src/GNC/src</name>
   </compound>
   <compound refid="dir_9a4c0ddeadfab001eff50c9783b5ab59" kind="dir"><name>src/OS/src</name>
   </compound>
